@@ -3,8 +3,13 @@
     width: 100%;
     height: 955px;
 }
+.whole:after{
+    content:"";
+    clear:both;
+    display:block;
+}
 #left {
-    position: relative;
+    float:left;
     width: 926px;
     height: 955px;
     background-color: black;
@@ -13,7 +18,7 @@
     position: absolute;
     width: 400px;
     left:526px;
-    top: 220px;
+    top: 25%;
     height: 500px;
     border: 3px #ffda2cff;
     background-color: #ffda2cff;
@@ -33,33 +38,35 @@ h1 {
     left: 110px;
     background-color: black;
     color: whitesmoke;
+    padding: 2px 10px;
+}
+#right {
+    float:right;
+    width:910px;
+    height:955px;
+    background-color: white;
 }
 .content {
     position: absolute;
-    width: 600px;
-    left: 930px;
-    top: 220px;
+    width: 619px;
+    left: 925px;
+    top: 25%;
     height: 500px;
     box-sizing: border-box;
-    border: 3px #ffda2cff;
+    border:4px solid #ffda2cff;
+    background-color: white;
 }
 #contact_info {
     position: relative;
-    top: 30px;
-    left: 10px;
-    font-size: 28px;
+    right: 0px;
+    width: 400px;
+    margin: 0 192px;
+    padding: 2px 10px;
+    font-size: 26px;
     font-family: arial, sans-serif;
-    color:black;
+    color:whitesmoke;
     font-weight: bold;
-}
-#github {
-    position: relative;
-    top: 35px;
-    left: 10px;
-    font-size: 28px;
-    font-family: arial,sans-serif;
-    color: black;
-    font-weight: bold;
+    background-color: black;
 }
 #jobs {
     position: relative;
@@ -79,4 +86,7 @@ h1 {
     font-size: 22px;
     font-family: arial, sans-serif;
     font-weight: bold;
+}
+a {
+    color: orange;
 }
